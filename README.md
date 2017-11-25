@@ -55,13 +55,16 @@ No license leaves your project code and data in legal limbo. If you don't mind p
 
 #### `README.md`
 You would write a describe the project with link to the story and subheadings like:
-* blah
-* foo
-* Ra
+* Motivation
+* Data description
+* Links to data
+* Link to published story
+* License
+* Contributing
+* Feedback
+* Requirements
 
 You can find out how to write markdown [here](https://guides.github.com/features/mastering-markdown/)
-
-### `data`
 
 ## Instructions
 Take a look at the `Example` branch to see what a project might look like – what information is provided in each section, formatting, etc.
@@ -72,7 +75,6 @@ To use this for your own project, either recreate the directory tree by hand, or
 Once I've tested it out, gotten feedback and made necessary adjustments, make a CookieCutter :smile:
 
 ## Contributing
-
 I welcome your feedback and suggestions to jastark1@gmail.com !
 
 ### Installing development requirements
