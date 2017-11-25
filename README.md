@@ -63,7 +63,7 @@ You can find out how to write markdown [here](https://guides.github.com/features
 
 ### `data`
 
-## Intructions
+## Instructions
 Take a look at the `Example` branch to see what a project might look like – what information is provided in each section, formatting, etc.
 
 To use this for your own project, either recreate the directory tree by hand, or clone this project, copy contents to new project or delete the `.git` folder, type `git init` and fill the project in!
