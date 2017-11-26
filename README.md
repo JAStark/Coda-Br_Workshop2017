@@ -1,5 +1,6 @@
 # Data Journalism Template for Transparency!
 
+[Slides](https://jastark.github.io/Coda-Br_Workshop2017Slides/) for the Workshop.
 ## Motivation
 * To encourage data journalists to make their process transparent
 * To begin to standardize how transparency might be achieved – what should and not be included, and how information should be organized so curious parties can know what to expect and where to find things.
@@ -77,5 +78,7 @@ Once I've tested it out, gotten feedback and made necessary adjustments, make a 
 ## Contributing
 I welcome your feedback and suggestions to jastark1@gmail.com !
 
-### Installing development requirements
-`pip install -r requirements.txt`
+# LICENSE (for this project)
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+
+[Coda-Br_Workshop2017](https://github.com/JAStark/Coda-Br_Workshop2017/) by [Jennifer A. Stark](https://github.com/JAStark) is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
