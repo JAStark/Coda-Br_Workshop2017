@@ -2,7 +2,7 @@
 Data is from Washington D.C.'s [open data portal](http://opendata.dc.gov/datasets?q=taxi) for January 2017.
 
 ## raw
-Contains the unzipped file downloaded from above.
+Contains the unzipped file downloaded from website linked above.
 Data was provided along with `README_DC_Taxicab_trip.txt` explaining the data, with data dictionary, row counts etc.
 
 ## external
@@ -19,9 +19,9 @@ Taxi data was joined with D.C. shape data using QGIS software via the GUI.
 Contains the csv file output of the join of taxi point data for drop-offs in D.C.
 
 ## Notebooks
-This directory contains just one python Jupyter Notebook with some data exploration and simple visualisations, in addition to means and medians.
+This directory contains just one python Jupyter Notebook with some data exploration and simple visualizations, in addition to means and medians.
 
-**Data Dictionary**
+## Data Dictionary
 Truncated titles seems to be a quirk of QGIS, as the column headers were not truncated in the original datasets.
 
 For Drop-offs:
@@ -45,7 +45,3 @@ Pandas 0.19.2
 Matplotlib 1.5.1
 Numpy 1.11.3
 Seaborn 0.7.1
-
-## LICENSE
-
-This project is licensed under

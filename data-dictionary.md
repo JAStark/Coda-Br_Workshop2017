@@ -1,6 +1,8 @@
-For Drop-offs:
-* TRIPTYPE: is "DDS" for Digital Dispatch Service, which includes phone dispatch and phone app dispatch; "PSP" for street hail, and "Transport-DC" for Metro Access were filtered out in a previous step.
+# For Drop-offs:
 
+A strange quirk in QGIS is that column names get truncated when outputting to csv.
+
+* TRIPTYPE: is "DDS" for Digital Dispatch Service, which includes phone dispatch and phone app dispatch; "PSP" for street hail, and "Transport-DC" for Metro Access were filtered out in a previous step.
 * METERFARE: Meter fare
 * TIP: Tip amount
 * TOTALAMOUN: Total amount from meter fare, tip, surcharge, extras, and tolls

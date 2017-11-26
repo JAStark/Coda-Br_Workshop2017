@@ -1,58 +1,42 @@
 # Data Journalism Template for Transparency - Example!
-* [Story title]() linked to the online story.
-* [Link to data]() if there was data located elsewhere (not in this repository on GitHub due to size restrictions of 500 MB).
+* [Slides](https://jastark.github.io/Coda-Br_Workshop2017Slides/) about why we should make our work transparent, and why this template can help.
+* [Interim data](https://drive.google.com/open?id=1pmIDLp84JWxh2buP_1GJFdkzxBMwEao6) where all taxi drop off points were joined with D.C. Shape data in QGIS.
+* [Processed data used in Notebook](https://drive.google.com/open?id=1ZXSvP626knV3YBhO99AgCR6JyNYbaJbg) as a csv (too big to store on GitHub (100MB limit)
 * [CODA-BR 2017 slides]() "Thinking About Algorithmic Accountability" keynote on algorithmic transparency for tech and for journalism.
 
 ## Motivation
 To provide a basic example of making data driven journalism (DDJ) transparent to readers, other journalists and government or civic-minded people for my workshop ["How to implement editorial transparency in data journalism"](http://coda.escoladedados.org/#programação) at the 2nd CODA•BR data journalism conference in São Paulo, Brazil 2017.
 
+This example looks at taxi fares in Washington D.C., and filters them based on whether the hails were by app/phone or by street hail; whether the fare was paid for in cash or with a credit card; and looking at differences in meter fare, tip, and total amount.
+
 The example dataset is taxi trips in Washington, D.C. from their [open data portal](http://opendata.dc.gov/datasets?q=taxi).
 
+## Data Dictionary for processed dataset
+A strange quirk in QGIS is that column names get truncated when outputting to csv.
 
+* TRIPTYPE: is "DDS" for Digital Dispatch Service, which includes phone dispatch and phone app dispatch; "PSP" for street hail, and "Transport-DC" for Metro Access were filtered out in a previous step.
+* METERFARE: Meter fare
+* TIP: Tip amount
+* TOTALAMOUN: Total amount from meter fare, tip, surcharge, extras, and tolls
+* PAYMENTTYP: Payment type (`Cash`, `CreditCard`)
+* PAYMENTCAR: Type of card used to pay (e.g. VISA)
+* DROPOFFDAT: Drop-off date
+* GEOID10: Census tract ID (from shape file)
+* NAME10: Block ID (from shape file)
+* ALAND10: Area of land in square meters (from shape file)
+* GEOID: Census tract ID (from taxi dataset)
 
-```
-├── AUTHORS.md        <- Everyone contributing to the story.
-├── LICENSE           <- Select a license for the analysis and/or the data.
-├── README.md         <- The top-level README for developers using this story.
-├── data
-│   ├── interim       <- Intermediate data that has been transformed, filtered or cleaned.
-│   ├── processed     <- The final data sets for analysis.
-│   └── raw           <- The original data, read only.
-│
-├── notebooks         <- Jupyter notebooks and analysis scripts. If there are several sequential
-│                        scripts or notebooks, consider naming numerically, like `0_data-exploration.ipynb`.
-│
-├── references        <- Data dictionaries, manuals, notes, sources, articles and other explanatory materials.
-│
-├── reports           <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures       <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt  <- The requirements file for reproducing the analysis environment, e.g.
-│                        generated with `pip freeze > requirements.txt`. Alternatively you can type in software,
-│                        libraries, and versions yourself.
-│
-├── .gitignore        <- List of files and folders that you do not want tracked by git and/or published online.
-│
-│
-└──  keys.txt         <- Contains all keys or access tokens for APIs, servers, databases etc that should not be shared.
+## Requirements
+Python 3.4.5
+Pandas 0.19.2
+Matplotlib 1.5.1
+Numpy 1.11.3
+seaborn 0.7.1
 
-```
-
-## Directory Description
-
-### `data`
-
-## Instructions
-Take a look at the `Example` branch to see what a project might look like – what information is provided in each section, formatting, etc.
-
-To use this for your own project, either recreate the directory tree by hand, or clone this project, copy contents to new project or delete the `.git` folder, type `git init` and fill the project in!
-
-## Future plan
-Once I've tested it out, gotten feedback and made necessary adjustments, make a CookieCutter :smile:
-
-## Contributing
-
-I welcome your feedback and suggestions to jastark1@gmail.com !
-
-### Installing development requirements
+## Installing development requirements
 `pip install -r requirements.txt`
+
+# LICENSE
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+
+[Coda-Br_Workshop2017](https://github.com/JAStark/Coda-Br_Workshop2017/tree/example) by [Jennifer A. Stark](https://github.com/JAStark) is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
