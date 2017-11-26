@@ -1,0 +1,5 @@
+Python 3.4.5
+Pandas 0.19.2
+Matplotlib 1.5.1
+Numpy 1.11.3
+seaborn 0.7.1
