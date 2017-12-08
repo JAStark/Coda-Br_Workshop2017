@@ -1,4 +1,7 @@
 # Data Journalism Template for Transparency!
+___
+Cookiecutter for data driven journalism now exists => [Click here](https://github.com/JAStark/cookiecutter-data-driven-journalism)
+___
 
 [Slides](https://jastark.github.io/Coda-Br_Workshop2017Slides/) for the Workshop.
 ## Motivation
